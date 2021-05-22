@@ -1,5 +1,6 @@
 <?php
 
+namespace TicTa;
 
 class Map
 {
@@ -29,7 +30,7 @@ class Map
                 } elseif ($cell == 'O') {
                     $html .= "<td>⭕</td>";
                 } else {
-                    $html .= "<td><a href='?j=$j&i=$i'>R</a></td>";
+                    $html .= "<td><a href='?j=$j&i=$i'><div id='link'></div></a></td>";
                 }
 //                $html .= "<td>$cell</td>";
             }
